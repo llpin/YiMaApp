@@ -8,7 +8,9 @@ import android.widget.Toast;
  */
 
 public class ToastUtil {
-    public static boolean enable = true;
+    private static boolean enable = true;
+
+    private static Toast toast;
 
     public static boolean isEnable() {
         return enable;
@@ -20,12 +22,24 @@ public class ToastUtil {
 
     public static void  showShort(Context ct, String str){
         if (isEnable())
-            Toast.makeText(ct, str, Toast.LENGTH_SHORT).show();
+            showToast(ct, str, Toast.LENGTH_SHORT);
     }
 
     public static void  showLong(Context ct, String str){
         if (isEnable())
-            Toast.makeText(ct, str, Toast.LENGTH_LONG).show();
+            showToast(ct, str, Toast.LENGTH_LONG);
+    }
+
+    public static void showToast(Context context,
+                                 String content, int duration) {
+        if (toast == null) {
+            toast = Toast.makeText(context,
+                    content,
+                    duration);
+        } else {
+            toast.setText(content);
+        }
+        toast.show();
     }
 
 }

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.common.activity.LoginActivity">
+
+
+    <com.templateapplication.components.ToolbarTitleLayout
+        android:id="@+id/toolbar_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height">
+
+    </com.templateapplication.components.ToolbarTitleLayout>
+
+    <com.templateapplication.components.HeadlineLayout16_9
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+    </com.templateapplication.components.HeadlineLayout16_9>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_layout_username"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_input_layout_height">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/text_input_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_name_label" />
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_input_layout_height">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password_label"
+                    android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textview_forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/text_input_layout_password"
+                android:layout_alignTop="@id/text_input_layout_password"
+                android:clickable="true"
+                android:text="@string/forget_password_label"
+                android:textColor="@color/textview_text_color"
+                android:textSize="@dimen/text_size_14sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/component_margin_3x"
+            android:background="@mipmap/flat_button_bg_accent"
+            android:stateListAnimator="@animator/selector_animator"
+            android:text="@string/login_label"
+            android:textColor="@color/colorTextLight" />
+
+        <TextView
+            android:id="@+id/textview_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/component_margin_2x"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/register_label"
+            android:textColor="@color/textview_text_color"
+            android:textSize="@dimen/text_size_14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

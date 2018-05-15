@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/colorPrimaryLight">
+
+    <ImageButton
+        android:id="@+id/btn_shopping_bike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/icons_shopping_bike_56x56"/>
+    <Button
+        android:id="@+id/btn_number_tag"
+        android:layout_width="@dimen/toolbar_height"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@mipmap/icons_tag_accent_56x56"
+        android:text="99+"
+        android:textColor="@color/colorTextLight"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/v_line_1x56"/>
+
+    <com.templateapplication.components.SealRecycleHViewLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/toolbar_height">
+
+    </com.templateapplication.components.SealRecycleHViewLayout>
+
+</LinearLayout>

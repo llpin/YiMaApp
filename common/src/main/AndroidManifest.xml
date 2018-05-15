@@ -43,6 +43,16 @@
 
         <activity android:name="com.common.activity.ContractActivity"
             android:label="@string/title_activity_main"/>
+
+        <!--template-->
+        <activity android:name=".activity.LoginActivity"></activity>
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.MineInfoActivity" />
+        <activity android:name=".activity.ContractListActivity" />
+        <activity android:name=".activity.ContractDetailsActivity" />
+        <activity android:name=".activity.RestPasswordActivity" />
+        <activity android:name=".activity.ContractPreviewActivity"></activity>
     </application>
 
 </manifest>

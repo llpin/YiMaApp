@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.templateapplication.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.templateapplication.components.MainToolbarHeadlineLayout
+            android:id="@+id/main_toolbar_headline_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_headline_height">
+
+        </com.templateapplication.components.MainToolbarHeadlineLayout>
+
+        <com.templateapplication.components.MainToolbarLayout
+            android:id="@+id/main_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height">
+
+        </com.templateapplication.components.MainToolbarLayout>
+
+        <com.templateapplication.components.QrScanBgLayout
+            android:id="@+id/qr_scan_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </com.templateapplication.components.QrScanBgLayout>
+
+        <com.templateapplication.components.BottomToolbarLayout
+            android:id="@+id/bottom_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height">
+
+        </com.templateapplication.components.BottomToolbarLayout>
+    </LinearLayout>
+
+    <com.templateapplication.components.QrScanRectLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+    </com.templateapplication.components.QrScanRectLayout>
+
+</RelativeLayout>

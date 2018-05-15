@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/colorPrimaryLight"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:background="@mipmap/icons_navigation_24px_white_close"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:id="@+id/text_view_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="@dimen/dark_title_size"
+            android:textColor="@color/colorTextLight"
+            android:paddingLeft="@dimen/component_margin"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_check"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:background="@mipmap/icons_navigation_24px_white_check"
+        android:adjustViewBounds="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

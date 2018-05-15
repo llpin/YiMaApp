@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/colorPrimaryLight">
+    <LinearLayout
+        android:id="@+id/left_layout"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/toolbar_headline_height"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true">
+        <ImageButton
+            android:id="@+id/btn_qr_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icons_qr_code_scan_32x32"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right_layout"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/toolbar_headline_height"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true">
+        <ImageButton
+            android:id="@+id/btn_person_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icons_person_info_32x32"
+            android:layout_marginRight="@dimen/component_margin"/>
+
+        <ImageButton
+            android:id="@+id/btn_contract_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icons_contract_list_32x32"
+            android:contentDescription="@string/image_content_description" />
+    </LinearLayout>
+</RelativeLayout>

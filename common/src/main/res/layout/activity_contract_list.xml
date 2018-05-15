@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_contract_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.common.activity.ContractListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.templateapplication.components.ToolbarBackLayout
+            android:id="@+id/toolbar_back_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height">
+
+        </com.templateapplication.components.ToolbarBackLayout>
+
+        <com.templateapplication.components.ContractRecycleVViewLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </com.templateapplication.components.ContractRecycleVViewLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

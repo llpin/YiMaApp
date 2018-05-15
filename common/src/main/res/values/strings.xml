@@ -1,14 +1,13 @@
 <resources>
-
-    <string name="app_name">智码爱家</string>
-    <string name="title_activity_main">智码爱家</string>
     <!--登录页 start-->
+    <string name="title_activity_main">智码爱家-消费者</string>
     <string name="login_button_text">登录</string>
     <string name="login_username_hint">用户名</string>
     <string name="login_password_hint">密码</string>
     <string name="username_hint">用户名</string>
     <string name="password_hint">密码</string>
     <string name="do_password_hint">业务密码</string>
+
     <string name="server_ip_hint">服务器地址</string>
     <!--登录页 end-->
 
@@ -17,12 +16,12 @@
 
     <!--合同-->
     <string name="contract_id_extra">contractId</string>
+    <string name="user_id_extra">userId</string>
     <string name="individual_id_extra">userId</string>
     <string name="contract_entity_extra">contractEntity</string>
 
     <!--商品信息-->
     <string name="product_code_extra">product_code</string>
-
     <!--nav drawer start-->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -39,4 +38,38 @@
     <string name="qrcode_result_okBtn">验真</string>
     <string name="qrcode_result_cancleBtn">返回</string>
     <!--二维码 end-->
+
+    <!--template-->
+    <string name="app_name">智码爱家</string>
+    <string name="register_title">注册</string>
+    <string name="organization_name">杭州易码科技</string>
+    <string name="create_time_label">生成时间：</string>
+    <string name="create_time_default_date">2018-05-03 08:08:08</string>
+    <string name="identify_time_label">验证时间：</string>
+    <string name="identify_time_default_date">2018-05-03 09:08:08</string>
+    <string name="product_count_label">总商品数：</string>
+    <string name="product_count_default">3</string>
+    <string name="details_label">详情</string>
+    <string name="user_name_label">用户名</string>
+    <string name="password_label">密码</string>
+    <string name="forget_password_label">忘记密码?</string>
+    <string name="login_label">登录</string>
+    <string name="register_label">注 册</string>
+    <string name="image_content_description">image</string>
+    <string name="max_count_label">99+</string>
+    <string name="mobielphone_label">手机号</string>
+    <string name="factory_name_default">杭州易码生产商</string>
+    <string name="product_name_label">商品名称：</string>
+    <string name="product_name_default">易码商品</string>
+    <string name="product_function_label">商品功能：</string>
+    <string name="product_function_default">易码功能</string>
+    <string name="product_promise_label">商品承诺：</string>
+    <string name="product_promise_default">易码承诺</string>
+    <string name="twice_password_label">重新输入登录密码</string>
+    <string name="identify_code_label">验证码</string>
+    <string name="get_identify_code_label">获取验证码</string>
+    <string name="toolbar_title_label_mine_info">个人信息</string>
+    <string name="username_default">zhangsan</string>
+    <string name="mobielphone_default">13515818134</string>
+
 </resources>

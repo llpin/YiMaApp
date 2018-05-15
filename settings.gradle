@@ -1,1 +1,1 @@
-include ':seller', ':customer', ':common'
+include ':seller', ':customer', ':common', ':templateapplication'

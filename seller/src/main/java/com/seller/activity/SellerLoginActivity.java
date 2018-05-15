@@ -24,9 +24,9 @@ import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
 
-public class LoginActivity extends BaseActivity implements LoginInter, View.OnClickListener {
+public class SellerLoginActivity extends BaseActivity implements LoginInter, View.OnClickListener {
 
-    private final static String TAG = "LoginActivity";
+    private final static String TAG = "SellerLoginActivity";
 
     private Button loginButton;
     private TextInputEditText userNameInput;
@@ -133,7 +133,7 @@ public class LoginActivity extends BaseActivity implements LoginInter, View.OnCl
                         @Override
                         public void onFailure(Call call, IOException e) {
 
-                            MessageToast messageToast = new MessageToast(LoginActivity.this, e.getMessage());
+                            MessageToast messageToast = new MessageToast(SellerLoginActivity.this, e.getMessage());
                             runOnUiThread(messageToast);
                             e.printStackTrace();
                         }
@@ -145,11 +145,11 @@ public class LoginActivity extends BaseActivity implements LoginInter, View.OnCl
                             L.d(TAG, ret);
                             LoginResult loginResultResponse = GsonUtil.fromJson(ret, LoginResult.class);
 
-                            runOnUiThread(new ResponseMessageToast(loginResultResponse, LoginActivity.this));
+                            runOnUiThread(new ResponseMessageToast(loginResultResponse, SellerLoginActivity.this));
 
                             if(loginResultResponse.getCode().compareTo("200") == 0){
                                 getUserApplication().setUserVo(loginResultResponse.getParams().getUserVo());
-                                ActivityUtil.startActivitySimple(LoginActivity.this,MainActivity.class);
+                                ActivityUtil.startActivitySimple(SellerLoginActivity.this,MainActivity.class);
                             }
                         }
                     });
